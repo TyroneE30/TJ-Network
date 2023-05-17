@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TJ Network - Contact</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" />    
+    
+<!-- Arquivos utilizados pelo jQuery lightBox plugin -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+<!-- / fim dos arquivos utilizados pelo jQuery lightBox plugin -->
+
+<!-- Ativando o jQuery lightBox plugin -->
+<script type="text/javascript">
+$(function() {
+    $('#map a').lightBox();
+});
+</script>
+
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+    	
+        <div id="menu">
+        	<ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="current">Contact</a></li>
+            </ul>
+            <div class="cleaner"></div>
+        </div> <!-- end of menu -->
+        
+		<div id="site_title"><h1><a href="#">TJ NETWORK</a><span>Informative news everywhere!</span></h1></div>
+    
+    </div> <!-- end of header -->
+    
+    <div id="middle">
+   		<div id="search_box">
+            <form action="#" method="get">
+                <input type="text" value="Search" name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                <input type="submit" name="Search" value="" id="searchbutton" title="Search" />
+            </form>
+        </div> <!-- end of search box -->
+    </div> <!-- end of middle -->
+    
+    <div id="main">
+                
+        <div id="content">
+      
+        	<div class="col_w880 intro">
+                <h2>Contact Information</h2>
+                <p>To contact our writers, contributors, or editors send your e-mail to @tjnews with the name of the recipient in the subject line.</p>
+                <p2> For advertising, we will get in touch with you! For more information and services, you can reach us:</p2>
+                
+            </div>
+            
+            <div class="col_w880 portfolio">
+            	
+                <div class="col_w400 float_l">
+				
+                    <div id="contact_form">
+					
+						<h4>Quick Contact</h4>
+						<form method="post" name="contact" action="#">
+	
+							<label for="author">Name:</label> <input type="text" maxlength="40" id="author" class="input_field" name="author" />
+							<div class="cleaner h10"></div>
+									
+							<label for="email">Email:</label> <input type="text" maxlength="40" id="email" class="input_field" name="email" />
+							<div class="cleaner h10"></div>
+									
+							<label for="subject">Subject:</label> <input type="text" maxlength="40" id="subject" class="input_field" name="subject" />
+							<div class="cleaner h10"></div>
+		
+							<label for="text">Message:</label> <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
+							<div class="cleaner h10"></div>
+		
+							<input type="submit" value="Send" id="submit" name="submit" class="submit_btn float_l" />
+							
+							<input type="reset" value="Reset" id="reset" name="reset" class="submit_btn float_r" />
+						
+						</form>
+						
+                	</div> 
+        		</div>
+                
+            	<div class="col_w400 float_r">
+                	<div id="map">
+						<h4>Our Location</h4>
+							<a href="images/map_big.jpg" title="Map">
+							<img src="images/map_thumb.jpg" alt="Map" /></a>
+					</div>
+					
+					<div class="cleaner h30"></div>
+					<h4>Mailing Address</h4>
+					<h6>TJ NETWORK</h6>
+					2/F TJ Network Center<br />
+					2200, Olongapo City, Zambales<br />
+					PHILIPPINES <br />
+						
+					Tel: +63-8982-7777 <br />
+					Fax: +63-2-333-7666 <br /> 
+                </div>
+                
+                <div class="cleaner"></div>
+            </div>
+        
+        </div> <!-- end of content -->
+        
+    </div>	<!-- end of main -->
+    
+    <div id="footer">
+    
+        Copyright © 2023 <a href="#">TJ NETWORK</a>
+    
+    </div> <!-- end of footer -->
+
+</div> <!-- end of wrapper -->
+
+</body>
+</html>
